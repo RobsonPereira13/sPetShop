@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { HomeComponent } from './pages/home/home.component';
+import { InicialComponent } from './pages/inicial/inicial.component';
 import { LoginComponent } from './pages/login/login.component';
 import { PainelComponent } from './pages/painel/painel.component';
 
@@ -8,12 +10,20 @@ import { PainelComponent } from './pages/painel/painel.component';
 const routes: Routes = [
   { 
     path: '', 
-    redirectTo: '/painel', 
+    redirectTo: '/inicial', 
     pathMatch: 'full' 
   },
   { path: 'painel', component: PainelComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'inicial', component: InicialComponent },
+    {
+        path: 'home',
+        component: HomeComponent,
+        children: [
+        { path: 'cadastro', component: CadastroComponent },
+        
+        ],
+    },
 ];
 
 @NgModule({

@@ -1,0 +1,60 @@
+
+
+  
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+  <div id="app-layout-body">
+    <div id="div-register">
+     <form>
+        <mat-stepper orientation="vertical">
+
+            <mat-step [stepControl]="firstFormGroup">
+                <form [formGroup]="firstFormGroup">
+                    <ng-template matStepLabel>Fill out your name</ng-template>
+                    <mat-form-field appearance="fill">
+                      <mat-label>Cpf</mat-label>
+                      <input matInput placeholder="informe seu cpf" formControlName="firstCtrl" required>
+                    </mat-form-field>
+                    <div>
+                      <button class="button" mat-button matStepperNext>continuar</button>
+                    </div>
+                  </form>
+            </mat-step>
+
+            <mat-step>
+              <ng-template matStepLabel>Step 2</ng-template>
+              <ng-template matStepContent>
+                <p>This content was also rendered lazily</p>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+              </ng-template>
+            </mat-step>
+
+            <mat-step>
+              <ng-template matStepLabel>Step 3</ng-template>
+              <p>This content was rendered eagerly</p>
+              <button mat-button matStepperPrevious>Back</button>
+            </mat-step>
+
+            <mat-step>
+                <ng-template matStepLabel>Step 4</ng-template>
+                <ng-template matStepContent>
+                  <p>This content was also rendered lazily</p>
+                  <button mat-button matStepperPrevious>Back</button>
+                  <button mat-button matStepperNext>Next</button>
+                </ng-template>
+              </mat-step>
+
+          </mat-stepper>
+
+
+        
+        
+    
+      </form>
+      
+    </div>
+    
+  </div>
+
+</div>

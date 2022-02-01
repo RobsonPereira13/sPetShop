@@ -1,0 +1,47 @@
+#app-layout-body {
+    height: auto;
+    width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 100px;
+    position: relative;
+   
+    border-radius: 10px;
+    
+    text-align: center;
+  }
+  #div-register {
+    
+    padding: 10px;
+    background-color: #22A0D1;
+    color: white;
+  }
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+    background-color: aliceblue;
+    color: #0d0d0e;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 60px;
+    border: 2px solid #aaa;
+  }
+
+  .mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+  .mat-form-field {
+    margin-top: 16px;
+  }
+  .step{
+      color: black;
+  }
+  .button{
+      color: black;
+  }
