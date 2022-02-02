@@ -11,20 +11,16 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sidebars/">
 
   </head>
-    <mat-toolbar class="toolbar" color="primary">
+    <mat-toolbar  class="toolbar" color="primary">
       <img
       width="40"
       alt=""
       src="https://image.shutterstock.com/image-vector/pet-shop-logo-template-260nw-1053368123.jpg"
     />
-      <span>My App</span>
-      <span class="example-spacer"></span>
-      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
-      </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>share</mat-icon>
-      </button>
+     
+      <span class="span" >Bem vindo</span>
+    
+    
     </mat-toolbar>
     <mat-drawer-container class="example-container">
       <div>
@@ -38,15 +34,34 @@
       
     </div>
     <div>
-      <button class="button" routerLink="/home" mat-raised-button color="primary">Relatórios </button>
+      <button disabled class="button" routerLink="/home" mat-raised-button color="primary">Relatórios </button>
     </div>
     <div>
-      <button class="button" routerLink="/home" mat-raised-button color="primary">Configurações</button>
+      <button disabled class="button" routerLink="/home" mat-raised-button color="primary">Configurações</button>
     </div>
     
     </mat-drawer-container>
 
     
- 
+   
+
+      <form >
+        <div class="container">
+          <div id="span-footer" >
+            <div >
+        <form >
+          <div>
+          <span class="span-footer">Precisa de suporte?</span>
+        </div>
+        <div>
+         <a class="span-footer-a" href="https://api.whatsapp.com/send?1=ptBR&phone=5581997568985" target="_blank">Clique aqui</a> 
+        </div>
+          
+        </form>
+            </div></div></div>
+        
+      
+    
+   
  
 <router-outlet></router-outlet>

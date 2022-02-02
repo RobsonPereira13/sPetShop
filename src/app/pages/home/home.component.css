@@ -13,3 +13,28 @@
   background-color: #22A0D1;
  
 }
+.span{
+  margin-left: 10px;
+}
+.span-footer{
+  height: auto;
+  width: 200px;
+  margin: 0 auto;
+  padding: 25px;
+  margin-left: 0px;
+  position: relative;
+  
+  color: black;
+  text-align: end;
+}
+.span-footer-a{
+  height: auto;
+  width: 100px;
+  margin: 0 auto;
+  padding: 25px;
+  margin-left: 0px;
+  position: relative;
+  
+  color: black;
+  text-align: end;
+}
