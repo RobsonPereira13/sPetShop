@@ -1,3 +1,4 @@
+import { InserirSenhaComponent } from './pages/inserir-senha/inserir-senha.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
         component: HomeComponent,
         children: [
         { path: 'cadastro', component: CadastroComponent },
+        { path: 'inserir', component: InserirSenhaComponent },
         
         ],
     },

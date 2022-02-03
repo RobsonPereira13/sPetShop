@@ -1,4 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+   height: 100%; 
+   padding: 0;
+   margin: 0;
+   
+  
+  
+  }
+body { margin: 0; font-family: Lexend, "Helvetica Neue", sans-serif; }
+.button{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 140px;
+    padding: 5px;
+    color: black;
+    background-color: #fff;
+    
+   
+  }
+  .toolbar{
+    margin-left: 5px;
+    background-color: #22A0D1;
+   
+  }
+  .span{
+    margin-left: 10px;
+  }
+  .span-footer{
+    height: auto;
+    width: 200px;
+    margin: 0 auto;
+    padding: 25px;
+    margin-left: 0px;
+    position: relative;
+    
+    color: black;
+    text-align: end;
+  }
+  .span-footer-a{
+    height: auto;
+    width: 100px;
+    margin: 0 auto;
+    padding: 25px;
+    margin-left: 0px;
+    position: relative;
+    
+    color: black;
+    text-align: end;
+  }
