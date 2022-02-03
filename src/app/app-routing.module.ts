@@ -11,7 +11,7 @@ import { PainelComponent } from './pages/painel/painel.component';
 const routes: Routes = [
   { 
     path: '', 
-    redirectTo: '/inicial', 
+    redirectTo: '/login', 
     pathMatch: 'full' 
   },
   { path: 'painel', component: PainelComponent },
