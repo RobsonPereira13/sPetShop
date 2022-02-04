@@ -6,6 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { InicialComponent } from './pages/inicial/inicial.component';
 import { LoginComponent } from './pages/login/login.component';
 import { PainelComponent } from './pages/painel/painel.component';
+import { FilaComponent } from './pages/fila/fila.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
         children: [
         { path: 'cadastro', component: CadastroComponent },
         { path: 'inserir', component: InserirSenhaComponent },
+        { path: 'fila', component: FilaComponent },
         
         ],
     },

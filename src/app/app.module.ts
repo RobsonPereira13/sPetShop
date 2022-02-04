@@ -8,9 +8,7 @@ import { PainelComponent } from './pages/painel/painel.component';
 import { LoginComponent } from './pages/login/login.component';
 
 import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
-import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
 
@@ -28,6 +26,8 @@ import { InicialComponent } from './pages/inicial/inicial.component';
 import { HomeModule } from './pages/home/home.module';
 import { CadastroModule } from './pages/cadastro/cadastro.module';
 import { InserirSenhaModule } from './pages/inserir-senha/inserir-senha.module';
+import { FilaModule } from './pages/fila/fila.module';
+
 
 
 
@@ -38,6 +38,7 @@ import { InserirSenhaModule } from './pages/inserir-senha/inserir-senha.module';
     PainelComponent,
     LoginComponent,
     InicialComponent,
+    
   
    
   ],
@@ -50,11 +51,10 @@ import { InserirSenhaModule } from './pages/inserir-senha/inserir-senha.module';
     HomeModule,
     CadastroModule,
     InserirSenhaModule,
+    FilaModule,
 
     MatInputModule,
-    MatFormFieldModule,
     MatIconModule,
-    MatCardModule,
     MatSelectModule,
     MatButtonModule,
     MatStepperModule,

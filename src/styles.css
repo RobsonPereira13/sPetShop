@@ -8,7 +8,8 @@ html, body {
   
   
   }
-body { margin: 0; font-family: Lexend, "Helvetica Neue", sans-serif; }
+body { font-family: Lexend, "Helvetica Neue", sans-serif; }
+
 .button{
     margin-top: 10px;
     margin-left: 5px;
@@ -19,33 +20,20 @@ body { margin: 0; font-family: Lexend, "Helvetica Neue", sans-serif; }
     
    
   }
-  .toolbar{
-    margin-left: 5px;
-    background-color: #22A0D1;
-   
-  }
+
   .span{
     margin-left: 10px;
   }
-  .span-footer{
-    height: auto;
-    width: 200px;
-    margin: 0 auto;
-    padding: 25px;
-    margin-left: 0px;
-    position: relative;
-    
-    color: black;
-    text-align: end;
-  }
-  .span-footer-a{
-    height: auto;
-    width: 100px;
-    margin: 0 auto;
-    padding: 25px;
-    margin-left: 0px;
-    position: relative;
-    
-    color: black;
-    text-align: end;
-  }
+  .card {
+    background-color: white; 
+    width: 85%;
+    height: 100%;
+    margin-bottom: 0;
+    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: block;
+    border-radius: 0px;
+    transition: all 0.2 linear;
+
+}
