@@ -1,31 +1,58 @@
 .carousel-inner > .carousel-item > img {
   
   min-width: 100%;
-height: 300px; 
+height: 400px; 
 }
 .example-card-sc {
   
   margin-top: 20px;
-  width: 50%;
-min-width: 200px;
-height: 300px;
+  width: 25%;
+min-width: 100px;
+margin-left: 30px;
+height: 500px;
 display: inline-block;
 vertical-align: top;
 background-color: #22A0D1;
 
 }
+.example-card-scc {
+  
+  margin-top: 20px;
+  width: 20%;
+min-width: 100px;
+height: 500px;
+display: inline-block;
+vertical-align: top;
+background-color: #dddedf;
+
+}
+
 .example-card-scu {
   
 margin-top: 20px;
-width: 50%;
-min-width: 200px;
-height: 300px;
+width: 20%;
+margin-left: 120px;
+min-width: 100px;
+height: 500px;
 display: inline-block;
 vertical-align: top;
 background-color: rgb(224, 228, 226);
 
 
 }
+.example-card-sca {
+  
+  margin-top: 20px;
+  width: 25%;
+min-width: 100px;
+
+height: 500px;
+display: inline-block;
+vertical-align: top;
+background-color: #22A0D1;
+
+}
 .card-title{
-  padding-left: 200px;
+  text-align: center;
+  justify-items: center;
 }

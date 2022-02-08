@@ -9,6 +9,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SharedModule } from 'src/app/shared/shared.module';
+import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -24,7 +27,10 @@ import { SharedModule } from 'src/app/shared/shared.module';
     CommonModule,
     RouterModule,
     FlexLayoutModule, 
-    SharedModule 
+    SharedModule,
+    MatCardModule,
+    MatListModule,
+    MatButtonModule,
    
   ]
 })

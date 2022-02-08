@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PainelComponent } from './pages/painel/painel.component';
 import { LoginComponent } from './pages/login/login.component';
+import { InicialComponent } from './pages/inicial/inicial.component';
 
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
@@ -22,11 +23,13 @@ import { environment } from './../environments/environment';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from "@angular/fire/compat/auth";
-import { InicialComponent } from './pages/inicial/inicial.component';
 import { HomeModule } from './pages/home/home.module';
 import { CadastroModule } from './pages/cadastro/cadastro.module';
 import { InserirSenhaModule } from './pages/inserir-senha/inserir-senha.module';
 import { FilaModule } from './pages/fila/fila.module';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatCardModule} from '@angular/material/card';
+
 
 
 
@@ -58,6 +61,10 @@ import { FilaModule } from './pages/fila/fila.module';
     MatSelectModule,
     MatButtonModule,
     MatStepperModule,
+    MatSnackBarModule,
+    MatCardModule,
+    
+    
 
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule
