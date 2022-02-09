@@ -1,4 +1,12 @@
 footer {
     padding: 20px;
   
+  
+  }
+  .footer-a{
+    text-align: end;
+    margin-top: -80px;
+  }
+  .span{
+    margin-right: 10px;
   }

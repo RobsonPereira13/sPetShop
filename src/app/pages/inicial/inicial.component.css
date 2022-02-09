@@ -1,62 +1,11 @@
-#app-layout-body {
-    height: auto;
-    width: 500px;
-    margin: 0 auto;
-    padding: 45px;
-    margin-top: 200px;
-    position: relative;
-   
-    border-radius: 10px;
-    
-   
-  }
-  #div-register {
-    
-    padding: 10px;
-    
-    color: black;
-  }
-  .example-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-  }
-  
-  .example-full-width {
-    width: 100%;
-    background-color: aliceblue;
-    color: #0d0d0e;
-    margin-top: 20px;
-    border-radius: 5px;
-    height: 60px;
-    border: 2px solid #aaa;
-  }
-
-  .mat-stepper-horizontal {
-    margin-top: 8px;
-  }
-  
-  .mat-form-field {
-    margin-top: 16px;
-  }
-  .step{
-      color: black;
-  }
-  .button{
-      color: black;
-  }
-  .footer{
-    margin-left: 150px;
-  }
-  .input{
-     justify-content: center;
-     align-content: center;
-  }
-
-
-
-  .card svg.material-icons path {
-    fill: #888;
+.content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .card-container {
@@ -69,13 +18,12 @@
   .card {
     all: unset;
     border-radius: 4px;
-    border: 1px solid #eee;
-    background-color: #fafafa;
     height: 40px;
     width: 200px;
     margin: 0 8px 16px;
     padding: 16px;
     display: flex;
+    text-align: center;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -83,42 +31,82 @@
     line-height: 24px;
   }
 
-  .card-container .card:not(:last-child) {
-    margin-right: 0;
-  }
-
   .card.card-small {
     height: 16px;
-    width: 168px;
+    width: 68px;
+   
   }
 
-  .card-container .card:not(.highlight-card) {
-    cursor: pointer;
-  }
-
-  .card-container .card:not(.highlight-card):hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-  }
-
-  .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
-  }
-  #app-layout-body {
-    height: auto;
-    width: 500px;
-  
-    padding: 25px;
-    margin-top: 200px;
-    position: relative;
-    border: 2px solid #aaa;
-    border-radius: 10px;
-    background-color: #22A0D1;
-    
-  }
-  #div-register {
-    
-    padding: 10px;
+  .card.highlight-card {
     background-color: #22A0D1;
     color: white;
+    font-weight: 600;
+    border: none;
+    width: 430px;
+    
+    position: relative;
+    
   }
+
+  .card.card.highlight-card span {
+    margin-left: 200px;
+  
+  }
+
+.mat-stepper{
+ width: 454px;
+ margin-top: 20px;
+
+}
+.img{
+  border-radius: 50px;
+ 
+  background-color: #fff;
+}
+
+
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+    .card-container > *:not(.circle-link) ,
+    .terminal {
+      width: 100%;
+    }
+
+    svg#rocket-smoke {
+      right: 120px;
+      transform: rotate(-5deg);
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  #app-layout-body {
+    display: flex;
+    height: auto;
+    width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 100px;
+    position: relative;
+    
+  }
+
+
+  
+
+
+  
+  
+ 
+  
+  
+
+
+  
+ 
+ 

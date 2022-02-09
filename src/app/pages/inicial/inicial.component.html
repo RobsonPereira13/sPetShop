@@ -1,88 +1,82 @@
   
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+
+
+
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <div class="container">
   <div id="app-layout-body">
-    <div id="div-register">
-     <form>
-        <mat-stepper orientation="vertical">
-
-            <mat-step [stepControl]="firstFormGroup" >
-                <form [formGroup]="firstFormGroup">
-                    <ng-template matStepperIcon="phone" matStepLabel>Informe seu cpf</ng-template>
-                    <mat-icon>call_end</mat-icon>
-                    <mat-form-field appearance="fill">
-                      <mat-label>Cpf</mat-label>
-                      <input class="input" matInput placeholder="informe seu cpf" formControlName="firstCtrl" required>
-                    </mat-form-field>
-                    <div>
-                      <button class="button" mat-button matStepperNext>continuar</button>
-                    </div>
-                  </form>
-                  <ng-template >
-                    
-                  </ng-template>
-                  <ng-template >
-                    
-                  </ng-template>
-            </mat-step>
-
-            <div class="card-container">
-              <button class="card card-small" >
-                <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                <span>New Component</span>
-              </button>
-          
-              <button class="card card-small">
-                <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                <span>Angular Material</span>
-              </button>
-          
-              <button class="card card-small" >
-                <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                <span>Add PWA Support</span>
-              </button>
-          
-              <button class="card card-small" >
-                <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                <span>Add Dependency</span>
-              </button>
-          
-              <button class="card card-small" >
-                <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                <span>Run and Watch Tests</span>
-              </button>
-          
-              <button class="card card-small" >
-                <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
-                <span>Build for Production</span>
-              </button>
-            </div>
-            <mat-step>
-              <ng-template matStepLabel>Escolha o serviço</ng-template>
-              <ng-template matStepContent>
-                
-                <button mat-button matStepperPrevious>voltar</button>
-                <button mat-button matStepperNext>Continuar</button>
-              </ng-template>
-            </mat-step>
-
-            <mat-step>
-              <ng-template matStepLabel>Confirmação</ng-template>
-              
-              <button mat-button matStepperPrevious>Confirmar</button>
-            </mat-step>
-
-         
-
-          </mat-stepper>
-         
-          
+  
+     
+      <form class="example-form" >
       
+
+        <div class="content" role="main" >
+
+          <!-- Highlight Card -->
+          <div class="card highlight-card card-small">
+        
+            
+            <img class="img"
+            width="100"
+            alt="Angular Logo"
+            src="https://a-static.mlcdn.com.br/1500x1500/adesivo-de-parede-28x28cm-cachorro-pata-coracao-pets-ref-ade0189-nebula-decor/nebuladecor/b6f11442876e11eba2e94201ac1850e0/eb8582921415f6dbecc8ab77d1cf4375.jpg"
+          /> <span class="span"> Pet Shop</span>
+        
+            
+        
+          </div>
+        
+          <form>
+            <mat-stepper class="mat-stepper" orientation="vertical">
+        
+                <mat-step [stepControl]="firstFormGroup" >
+                    <form [formGroup]="firstFormGroup">
+                        <ng-template matStepperIcon="phone" matStepLabel>Informe seu cpf</ng-template>
+                       
+                        <mat-form-field appearance="fill">
+                          <mat-label>Cpf</mat-label>
+                          <input class="input" matInput placeholder="informe seu cpf" formControlName="firstCtrl" required>
+                        </mat-form-field>
+                        <div>
+                          <button class="button" mat-button matStepperNext>continuar</button>
+                        </div>
+                      </form>
+                      <ng-template >
+                        
+                      </ng-template>
+                      <ng-template >
+                        
+                      </ng-template>
+                </mat-step>
+        
+           
+                <mat-step>
+                  <ng-template matStepLabel>Escolha o serviço</ng-template>
+                  <ng-template matStepContent>
+                    
+                    <button mat-button matStepperPrevious>voltar</button>
+                    <button mat-button matStepperNext>Continuar</button>
+                  </ng-template>
+                </mat-step>
+        
+                <mat-step>
+
+                  <ng-template matStepLabel>Confirmação</ng-template>
+                  
+                  <button mat-button matStepperPrevious>Confirmar</button>
+              
+                </mat-step> 
+        
+              </mat-stepper>
+             
+          </form>
+        
+        </div>
+
       </form>
-  
-  
-    </div>
-    
-  </div>
+  </div >
 
 </div>
