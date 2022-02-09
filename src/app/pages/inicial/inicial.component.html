@@ -1,9 +1,3 @@
-  
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-
-
-
-
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <div class="container">
@@ -29,49 +23,32 @@
         
           </div>
         
-          <form>
+          <form [formGroup]="firstFormGroup">
+            
             <mat-stepper class="mat-stepper" orientation="vertical">
-        
-                <mat-step [stepControl]="firstFormGroup" >
-                    <form [formGroup]="firstFormGroup">
-                        <ng-template matStepperIcon="phone" matStepLabel>Informe seu cpf</ng-template>
-                       
-                        <mat-form-field appearance="fill">
-                          <mat-label>Cpf</mat-label>
-                          <input class="input" matInput placeholder="informe seu cpf" formControlName="firstCtrl" required>
-                        </mat-form-field>
-                        <div>
-                          <button class="button" mat-button matStepperNext>continuar</button>
-                        </div>
-                      </form>
-                      <ng-template >
-                        
-                      </ng-template>
-                      <ng-template >
-                        
-                      </ng-template>
-                </mat-step>
-        
-           
-                <mat-step>
-                  <ng-template matStepLabel>Escolha o serviço</ng-template>
-                  <ng-template matStepContent>
-                    
-                    <button mat-button matStepperPrevious>voltar</button>
-                    <button mat-button matStepperNext>Continuar</button>
-                  </ng-template>
-                </mat-step>
-        
-                <mat-step>
-
-                  <ng-template matStepLabel>Confirmação</ng-template>
-                  
-                  <button mat-button matStepperPrevious>Confirmar</button>
+              <mat-step label="Step 1" state="pet" [stepControl]="firstFormGroup">
               
-                </mat-step> 
-        
-              </mat-stepper>
-             
+                <div>
+                  <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                  <button mat-button matStepperNext>Next</button>
+                </div>
+              </mat-step>
+              <mat-step label="Step 2" state="pet">
+                <p>Socialize with each other.</p>
+                <div>
+                  <button mat-button matStepperPrevious>Back</button>
+                  <button mat-button matStepperNext>Next</button>
+                </div>
+              </mat-step>
+              <mat-step label="Step 3" state="pet">
+                <p>You're welcome.</p>
+              </mat-step>
+            
+              <!-- Icon overrides. -->
+              <ng-template matStepperIcon="pet">
+                <mat-icon>pets</mat-icon>
+              </ng-template>
+            </mat-stepper>
           </form>
         
         </div>
@@ -80,3 +57,4 @@
   </div >
 
 </div>
+

@@ -12,7 +12,7 @@ import { FilaComponent } from './pages/fila/fila.component';
 const routes: Routes = [
   { 
     path: '', 
-    redirectTo: '/login', 
+    redirectTo: '/inicial', 
     pathMatch: 'full' 
   },
   { path: 'painel', component: PainelComponent },
