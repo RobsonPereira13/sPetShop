@@ -19,29 +19,51 @@
             src="https://a-static.mlcdn.com.br/1500x1500/adesivo-de-parede-28x28cm-cachorro-pata-coracao-pets-ref-ade0189-nebula-decor/nebuladecor/b6f11442876e11eba2e94201ac1850e0/eb8582921415f6dbecc8ab77d1cf4375.jpg"
           /> <span class="span"> Pet Shop</span>
         
-            
-        
           </div>
-        
-          <form [formGroup]="firstFormGroup">
-            
-            <mat-stepper class="mat-stepper" orientation="vertical">
+  
+            <mat-stepper linear  #stepper class="mat-stepper" orientation="vertical">
               <mat-step label="Step 1" state="pet" [stepControl]="firstFormGroup">
-              
-                <div>
-                  <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
-                  <button mat-button matStepperNext>Next</button>
-                </div>
+                <form [formGroup]="firstFormGroup">
+                  <ng-template matStepLabel>Informe seu cpf</ng-template>
+                  <mat-form-field appearance="fill">
+                    
+                    <input type="number"  matInput placeholder="000.000.000-00" formControlName="firstCtrl" required>
+                  </mat-form-field>
+                  <div>
+                    <button mat-button matStepperNext>Continuar</button>
+                  </div>
+                </form>
               </mat-step>
-              <mat-step label="Step 2" state="pet">
-                <p>Socialize with each other.</p>
-                <div>
-                  <button mat-button matStepperPrevious>Back</button>
-                  <button mat-button matStepperNext>Next</button>
-                </div>
+
+              <mat-step label="Step 2" state="pet" [stepControl]="secondFormGroup">
+                <form [formGroup]="secondFormGroup">
+                  <ng-template matStepLabel>Escolha o serviço</ng-template>
+                 
+                  
+        <mat-radio-group  formControlName="secondCtrl" required
+  aria-labelledby="example-radio-group-label"
+  class="example-radio-group"
+  [(ngModel)]="favoriteSeason">
+  <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+    {{season}}
+  </mat-radio-button>
+</mat-radio-group>
+
+                   
+                  
+                  <div>
+                    <button mat-button matStepperPrevious>Voltar</button>
+                    <button mat-button matStepperNext>Continuar</button>
+                  </div>
+                </form>
               </mat-step>
+
+
               <mat-step label="Step 3" state="pet">
-                <p>You're welcome.</p>
+                <ng-template matStepLabel>Finalização</ng-template>
+                <p><b>Aguarde ser chamado</b></p>
+                <button mat-button matStepperPrevious>Cancelar</button>
+                <button mat-button matStepperPrevious>Ok</button>
               </mat-step>
             
               <!-- Icon overrides. -->
@@ -49,7 +71,7 @@
                 <mat-icon>pets</mat-icon>
               </ng-template>
             </mat-stepper>
-          </form>
+      
         
         </div>
 
