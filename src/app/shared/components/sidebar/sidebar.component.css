@@ -1,13 +1,15 @@
 .button{
-    margin-top: 10px;
+    margin-top: 15px;
     width: 150px;
-   padding: 5px;
+   padding: 3px;
+   margin-left: 3px;
     background-color: #fff;
     color: black;
     border-radius: 5px;
    
 }
 .mat-drawer-container{
+  margin-top: 15px;
     background-color: #fff;
     height: 500px;
     border-color: black;

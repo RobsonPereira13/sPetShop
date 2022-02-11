@@ -12,10 +12,13 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
-import {MatRadioModule} from '@angular/material/radio';
-
-
+import {MatRadioModule, MAT_RADIO_DEFAULT_OPTIONS} from '@angular/material/radio';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatCardModule} from '@angular/material/card';
 import {MatStepperModule} from '@angular/material/stepper';
+
+
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
@@ -28,8 +31,7 @@ import { HomeModule } from './pages/home/home.module';
 import { CadastroModule } from './pages/cadastro/cadastro.module';
 import { InserirSenhaModule } from './pages/inserir-senha/inserir-senha.module';
 import { FilaModule } from './pages/fila/fila.module';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
-import {MatCardModule} from '@angular/material/card';
+
 
 
 
@@ -65,6 +67,7 @@ import {MatCardModule} from '@angular/material/card';
     MatSnackBarModule,
     MatCardModule,
     MatRadioModule,
+    MatCheckboxModule,
     
     
 
@@ -72,7 +75,10 @@ import {MatCardModule} from '@angular/material/card';
     AngularFireAuthModule
   ],
 
-  providers: [],
+  providers: [
+    {provide: MAT_RADIO_DEFAULT_OPTIONS,
+      useValue: { color: 'primary' },}
+  ],
   bootstrap: [AppComponent]
 })
 

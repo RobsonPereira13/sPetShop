@@ -34,7 +34,9 @@
   .card.card-small {
     height: 16px;
     width: 68px;
-   
+   display: flex;
+   align-items: center;
+   justify-items: center
   }
 
   .card.highlight-card {
@@ -104,7 +106,7 @@ input[type=number] {
     display: flex;
     height: auto;
     width: 500px;
-    margin: 0 auto;
+    margin: auto;
     padding: 25px;
     margin-top: 100px;
     position: relative;
@@ -118,13 +120,16 @@ input[type=number] {
     align-items: flex-start;
     text-align: center;
     color: rgb(80, 80, 80);
+   
     
   }
   
   .example-radio-button {
     margin: 5px;
+   
     
   }
+
 
 
   

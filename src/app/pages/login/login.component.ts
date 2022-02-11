@@ -23,9 +23,10 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  
   form: FormGroup;
   usuario: Usuario = new Usuario();
-
+  toppings: FormGroup;
  
   hide = true;
  
@@ -36,7 +37,11 @@ export class LoginComponent implements OnInit {
     private snackBar: MatSnackBar
   
     ) { 
-
+      this.toppings = fb.group({
+        pepperoni: false,
+        extracheese: false,
+        mushroom: false,
+      });
 
     }
 

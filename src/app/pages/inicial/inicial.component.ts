@@ -10,7 +10,9 @@ import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
     {
       provide: STEPPER_GLOBAL_OPTIONS,
       useValue: {displayDefaultIndicatorType: false},
+      
     },
+  
   ],
 })
 
@@ -18,7 +20,8 @@ export class InicialComponent implements OnInit {
 
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
-  isOptional = false;
+  thirdFormGroup: FormGroup;
+
  
   favoriteSeason: string;
   seasons: string[] = ['Consulta Clínica', 'Exames Laboratorias', 'Vacinas', 'Consulta Especialidades','Exame de Imagem'];
@@ -33,9 +36,11 @@ export class InicialComponent implements OnInit {
       firstCtrl: ['', Validators.required],
     });
     this.secondFormGroup = this._formBuilder.group({
-      secondCtrl: '',
+      secondCtrl: '', 
+    });
+    this.thirdFormGroup = this._formBuilder.group({
+      thirdCtrl: '',
     });
   }
-  
 
 }

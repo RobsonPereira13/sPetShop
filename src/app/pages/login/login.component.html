@@ -1,61 +1,86 @@
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+
 <div class="container">
   <div id="app-layout-body">
     <div id="div-register">
-     
+
       <form class="example-form" [formGroup]="form" novalidate>
         <span class="form-logo">
           <i class="zmdi zmdi-landscape"></i>
         </span>
 
-        <mat-form-field  class="example-full-width" appearance="fill">
-          <mat-label >Email</mat-label>
-          <input  type="text" matInput formControlName="email"
-          placeholder="Ex. pat@example.com" > 
-        
-        </mat-form-field>
-  
         <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Informe sua senha</mat-label>
-          <input  matInput [type]="hide ? 'password' : 'text'" formControlName="senha" >
           
-          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-          </button>
+          <mat-label>Email</mat-label>
+          
+          <input type="text" matInput formControlName="email" placeholder="Ex. pat@example.com">
+       
         </mat-form-field>
 
-        <mat-form-field class="example-full-width"  appearance="fill" >
+        <mat-form-field class="example-full-width" appearance="fill">
+
+          <mat-label>Informe sua senha</mat-label>
+
+          <input matInput [type]="hide ? 'password' : 'text'" formControlName="senha">
+
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+
           <mat-label>Unidade</mat-label>
+
           <mat-select formControlName="unidade">
             <mat-option value="bv">Boa Viagem</mat-option>
             <mat-option value="pi">Piedade</mat-option>
             <mat-option value="se">Setúbal</mat-option>
             <mat-option value="cf">Casa Forte</mat-option>
-    
           </mat-select>
+
         </mat-form-field>
 
+     
+
         <div class="example-button-row">
-        <button 	[disabled]="form.invalid" (click)="logarEmail()"  mat-raised-button color="primary">Acessar</button>
-      </div>
-    
+          <button [disabled]="form.invalid" (click)="logarEmail()" mat-raised-button color="primary">Acessar</button>
+        </div>
+
       </form>
-      
+
     </div>
-    
+
   </div>
   <div class="container">
-    <div id="suporte" >
-      <div >
-  <form >
-    <div>
-    <span>Precisa de suporte?</span>
+    <div id="suporte">
+      <div>
+        <form>
+          <div>
+            <span>Precisa de suporte?</span>
+          </div>
+          <div>
+            <a href="https://api.whatsapp.com/send?1=ptBR&phone=5581997568985" target="_blank">Clique aqui</a>
+          </div>
+
+        </form>
+      </div>
+    </div>
   </div>
-  <div>
-   <a  href="https://api.whatsapp.com/send?1=ptBR&phone=5581997568985" target="_blank">Clique aqui</a> 
-  </div>
-    
-  </form>
-      </div></div></div>
 </div>
