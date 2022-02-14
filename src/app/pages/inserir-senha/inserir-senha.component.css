@@ -3,3 +3,10 @@
 }.form-control{
   margin-top: 5px;
 }
+.flex-box {
+  display:flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  
+  
+}

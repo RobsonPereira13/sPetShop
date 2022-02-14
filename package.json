@@ -27,6 +27,7 @@
     "firebase": "^9.6.5",
     "font-awesome": "^4.7.0",
     "jquery": "^3.6.0",
+    "ngx-mask": "^13.1.1",
     "rxfire": "^6.0.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",

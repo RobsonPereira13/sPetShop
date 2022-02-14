@@ -13,7 +13,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 
-
+import { NgxMaskModule, IConfig } from 'ngx-mask'
 
 
 
@@ -33,6 +33,9 @@ import {MatButtonModule} from '@angular/material/button';
     MatCardModule,
     MatListModule,
     MatButtonModule,
+    NgxMaskModule.forRoot({
+      dropSpecialCharacters:false
+    }),
   
    
   ]

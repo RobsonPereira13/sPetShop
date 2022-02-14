@@ -23,6 +23,8 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
+import { NgxMaskModule, IConfig } from 'ngx-mask'
+
 import { environment } from './../environments/environment';
 
 import { AngularFireModule } from '@angular/fire/compat';
@@ -68,6 +70,9 @@ import { FilaModule } from './pages/fila/fila.module';
     MatCardModule,
     MatRadioModule,
     MatCheckboxModule,
+    NgxMaskModule.forRoot({
+      dropSpecialCharacters:false
+    }),
     
     
 
