@@ -37,12 +37,12 @@
                   <form [formGroup]="secondFormGroup">
                     <ng-template matStepLabel>Informe o nome do pet</ng-template>
       
-                    <mat-form-field  appearance="fill">
+                    <mat-form-field class="ancho" appearance="fill">
                       <input type="text" matInput placeholder="" formControlName="secondCtrl" required>
                     </mat-form-field>
       
                     <div>
-                      <button mat-button matStepperPrevious>Voltar</button>
+                      <button  mat-button matStepperPrevious>Voltar</button>
                       <button mat-button matStepperPrevious (click)="stepper.reset()">Cancelar</button>
                       <button mat-button matStepperNext>Continuar</button>
                     </div>
@@ -55,9 +55,9 @@
                     <ng-template matStepLabel>Escolha o serviço</ng-template>
       
       
-                    <mat-radio-group formControlName="thirdCtrl" required aria-labelledby="example-radio-group-label"
+                    <mat-radio-group class="ancho" formControlName="thirdCtrl" required aria-labelledby="example-radio-group-label"
                       class="example-radio-group" [(ngModel)]="favoriteSeason">
-                      <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+                      <mat-radio-button class="ancho"  class="example-radio-button" *ngFor="let season of seasons" [value]="season">
                         {{season}}
                       </mat-radio-button>
                     </mat-radio-group>

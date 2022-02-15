@@ -19,6 +19,26 @@
   }
 
 
+
+  .example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    text-align: start;
+    color: rgb(80, 80, 80);
+   
+    
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+   
+    
+  }
+
   
   
  
