@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
+
+import{MediaObserver, MediaChange}from '@angular/flex-layout';
+import{Subscription} from 'rxjs';
 
 @Component({
   selector: 'app-inicial',
@@ -16,22 +19,31 @@ import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
   ],
 })
 
-export class InicialComponent implements OnInit {
+export class InicialComponent implements OnInit, OnDestroy {
 
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
   thirdFormGroup: FormGroup;
+  title ='flex-tutorial';
+  mediaSub: Subscription;
 
  
   favoriteSeason: string;
   seasons: string[] = ['Consulta Clínica', 'Exames Laboratorias', 'Vacinas', 'Consulta Especialidades','Exame de Imagem'];
   
 
-  constructor(private _formBuilder: FormBuilder) {
+  constructor(private _formBuilder: FormBuilder, public mediaObserver: MediaObserver) {
  
   }
 
+
   ngOnInit() {
+
+this.mediaSub= this.mediaObserver.media$.subscribe(
+  (result: MediaChange)=>{
+  console.log(result.mqAlias);
+})
+
     this.firstFormGroup = this._formBuilder.group({
       firstCtrl: ['', Validators.required],
     });
@@ -42,5 +54,7 @@ export class InicialComponent implements OnInit {
       thirdCtrl: '',
     });
   }
-
+  ngOnDestroy() {
+    this.mediaSub.unsubscribe();
+     }
 }

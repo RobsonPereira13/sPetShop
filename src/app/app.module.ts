@@ -34,6 +34,8 @@ import { CadastroModule } from './pages/cadastro/cadastro.module';
 import { InserirSenhaModule } from './pages/inserir-senha/inserir-senha.module';
 import { FilaModule } from './pages/fila/fila.module';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 
 
@@ -60,6 +62,8 @@ import { FilaModule } from './pages/fila/fila.module';
     CadastroModule,
     InserirSenhaModule,
     FilaModule,
+
+    FlexLayoutModule,
 
     MatInputModule,
     MatIconModule,
