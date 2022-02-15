@@ -15,6 +15,10 @@ import {MatButtonModule} from '@angular/material/button';
 
 import { NgxMaskModule, IConfig } from 'ngx-mask'
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from "@angular/fire/compat/auth";
+import { environment } from 'src/environments/environment';
+
 
 
 
@@ -33,6 +37,9 @@ import { NgxMaskModule, IConfig } from 'ngx-mask'
     MatCardModule,
     MatListModule,
     MatButtonModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    
     NgxMaskModule.forRoot({
       dropSpecialCharacters:false
     }),

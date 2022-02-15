@@ -26,6 +26,7 @@ export class InicialComponent implements OnInit, OnDestroy {
   thirdFormGroup: FormGroup;
   title ='flex-tutorial';
   mediaSub: Subscription;
+  deviceXs: boolean;
 
  
   favoriteSeason: string;
@@ -42,6 +43,7 @@ export class InicialComponent implements OnInit, OnDestroy {
 this.mediaSub= this.mediaObserver.media$.subscribe(
   (result: MediaChange)=>{
   console.log(result.mqAlias);
+  this.deviceXs = result.mqAlias ==='xs'? true : false;
 })
 
     this.firstFormGroup = this._formBuilder.group({

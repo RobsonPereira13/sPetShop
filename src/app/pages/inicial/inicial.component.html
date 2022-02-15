@@ -1,95 +1,100 @@
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-<div class="container" >
-  <div id="app-layout-body"  fxLayout="column" fxLayoutAlign="space-between center">
 
+      <div class="body">
 
-    <form class="example-form" >
-
-
-      <div class="content" role="main">
-
-        <!-- Highlight Card -->
-        <div class="card highlight-card card-small">
-
-
-          <img class="img" width="100" alt="Angular Logo"
-            src="https://a-static.mlcdn.com.br/1500x1500/adesivo-de-parede-28x28cm-cachorro-pata-coracao-pets-ref-ade0189-nebula-decor/nebuladecor/b6f11442876e11eba2e94201ac1850e0/eb8582921415f6dbecc8ab77d1cf4375.jpg" />
-          <span class="span"> Pet Shop</span>
-
-        </div>
-
-        <mat-stepper linear #stepper class="mat-stepper" orientation="vertical">
-          <mat-step label="Step 1" state="pet" [stepControl]="firstFormGroup">
-            <form [formGroup]="firstFormGroup">
-              <ng-template matStepLabel>Informe seu cpf</ng-template>
-             
-              <mat-form-field appearance="fill">
-                <input type="text" matInput placeholder="000.000.000-00" mask="000.000.000-00" formControlName="firstCtrl" required>
+        <div class="login">
+           
+            <h1 class="h3 mb-3 fw-normal">Login</h1>
+            <mat-form-field class="ancho" appearance="fill">
+                <mat-label>Usuario</mat-label>
+                <input matInput>
               </mat-form-field>
-
-              <div>
-                <button mat-button matStepperNext>Continuar</button>
-              </div>
-
-            </form>
-          </mat-step>
-
-          <mat-step label="Step 2" state="pet" [stepControl]="secondFormGroup">
-            <form [formGroup]="secondFormGroup">
-              <ng-template matStepLabel>Informe o nome do pet</ng-template>
-
-              <mat-form-field appearance="fill">
-                <input type="text" matInput placeholder="" formControlName="secondCtrl" required>
+              <mat-form-field class="ancho" appearance="fill">
+                <mat-label>Contraseña</mat-label>
+                <input matInput>
               </mat-form-field>
+              <br>
+              <button  class="ancho" mat-raised-button mat-button color="primary">Primary</button>
 
-              <div>
-                <button mat-button matStepperPrevious>Voltar</button>
-                <button mat-button matStepperPrevious (click)="stepper.reset()">Cancelar</button>
-                <button mat-button matStepperNext>Continuar</button>
-              </div>
-
-            </form>
-          </mat-step>
-
-          <mat-step label="Step 3" state="pet" [stepControl]="thirdFormGroup">
-            <form [formGroup]="thirdFormGroup">
-              <ng-template matStepLabel>Escolha o serviço</ng-template>
-
-
-              <mat-radio-group formControlName="thirdCtrl" required aria-labelledby="example-radio-group-label"
-                class="example-radio-group" [(ngModel)]="favoriteSeason">
-                <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
-                  {{season}}
-                </mat-radio-button>
-              </mat-radio-group>
-
-              <div>
-                <button mat-button matStepperPrevious>Voltar</button>
-                <button mat-button matStepperPrevious (click)="stepper.reset()">Cancelar</button>
-                <button mat-button matStepperNext>Continuar</button>
-              </div>
               
-            </form>
-          </mat-step>
-
-
-          <mat-step label="Step 4" state="pet">
-            <ng-template matStepLabel>Finalização</ng-template>
-            <p><b>Aguarde ser chamado</b></p>
-            <button mat-button matStepperPrevious (click)="stepper.reset()">Cancelar</button>
-            <button mat-button matStepperPrevious>Ok</button>
-          </mat-step>
-
-          <!-- Icon overrides. -->
-          <ng-template matStepperIcon="pet">
-            <mat-icon>pets</mat-icon>
-          </ng-template>
-        </mat-stepper>
-
-
+       
+              <mat-stepper linear #stepper class="mat-stepper" orientation="vertical">
+                <mat-step label="Step 1" state="pet" [stepControl]="firstFormGroup">
+                  <form [formGroup]="firstFormGroup">
+                    <ng-template matStepLabel>Informe seu cpf</ng-template>
+                   
+                    <mat-form-field appearance="fill">
+                      <input type="text" matInput placeholder="000.000.000-00" mask="000.000.000-00" formControlName="firstCtrl" required>
+                    </mat-form-field>
+      
+                    <div>
+                      <button mat-button matStepperNext>Continuar</button>
+                    </div>
+      
+                  </form>
+                </mat-step>
+      
+                <mat-step label="Step 2" state="pet" [stepControl]="secondFormGroup">
+                  <form [formGroup]="secondFormGroup">
+                    <ng-template matStepLabel>Informe o nome do pet</ng-template>
+      
+                    <mat-form-field appearance="fill">
+                      <input type="text" matInput placeholder="" formControlName="secondCtrl" required>
+                    </mat-form-field>
+      
+                    <div>
+                      <button mat-button matStepperPrevious>Voltar</button>
+                      <button mat-button matStepperPrevious (click)="stepper.reset()">Cancelar</button>
+                      <button mat-button matStepperNext>Continuar</button>
+                    </div>
+      
+                  </form>
+                </mat-step>
+      
+                <mat-step label="Step 3" state="pet" [stepControl]="thirdFormGroup">
+                  <form [formGroup]="thirdFormGroup">
+                    <ng-template matStepLabel>Escolha o serviço</ng-template>
+      
+      
+                    <mat-radio-group formControlName="thirdCtrl" required aria-labelledby="example-radio-group-label"
+                      class="example-radio-group" [(ngModel)]="favoriteSeason">
+                      <mat-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+                        {{season}}
+                      </mat-radio-button>
+                    </mat-radio-group>
+      
+                    <div>
+                      <button mat-button matStepperPrevious>Voltar</button>
+                      <button mat-button matStepperPrevious (click)="stepper.reset()">Cancelar</button>
+                      <button mat-button matStepperNext>Continuar</button>
+                    </div>
+                    
+                  </form>
+                </mat-step>
+      
+      
+                <mat-step label="Step 4" state="pet">
+                  <ng-template matStepLabel>Finalização</ng-template>
+                  <p><b>Aguarde ser chamado</b></p>
+                  <button mat-button matStepperPrevious (click)="stepper.reset()">Cancelar</button>
+                  <button mat-button matStepperPrevious>Ok</button>
+                </mat-step>
+      
+                <!-- Icon overrides. -->
+                <ng-template matStepperIcon="pet">
+                  <mat-icon>pets</mat-icon>
+                </ng-template>
+              </mat-stepper>
       </div>
+      
+            </div>
+      
+        
+      
+       
+   
 
-    </form>
-  </div>
+ 
 
-</div>
+
+
+    
