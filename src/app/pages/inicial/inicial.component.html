@@ -1,7 +1,7 @@
 
       <div class="body">
 
-        <div class="login">
+        <div class="inicial">
            
             <h1 class="h3 mb-3 fw-normal">Login</h1>
             <mat-form-field class="ancho" appearance="fill">
@@ -22,7 +22,7 @@
                   <form [formGroup]="firstFormGroup">
                     <ng-template matStepLabel>Informe seu cpf</ng-template>
                    
-                    <mat-form-field appearance="fill">
+                    <mat-form-field  appearance="fill">
                       <input type="text" matInput placeholder="000.000.000-00" mask="000.000.000-00" formControlName="firstCtrl" required>
                     </mat-form-field>
       
@@ -37,7 +37,7 @@
                   <form [formGroup]="secondFormGroup">
                     <ng-template matStepLabel>Informe o nome do pet</ng-template>
       
-                    <mat-form-field appearance="fill">
+                    <mat-form-field  appearance="fill">
                       <input type="text" matInput placeholder="" formControlName="secondCtrl" required>
                     </mat-form-field>
       
