@@ -8,14 +8,14 @@
   }
   .inicial {
     width: 100%;
-    max-width: 50%;
+    max-width: 80%;
     padding: 15px;
     margin: auto;
     text-align: center;
   }
 
   .ancho {
-    width: 80%;
+    width: 100%;
   }
 
 

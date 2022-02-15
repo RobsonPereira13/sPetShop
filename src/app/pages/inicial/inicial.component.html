@@ -22,12 +22,12 @@
                   <form [formGroup]="firstFormGroup">
                     <ng-template matStepLabel>Informe seu cpf</ng-template>
                    
-                    <mat-form-field  appearance="fill">
+                    <mat-form-field class="ancho" appearance="fill">
                       <input type="text" matInput placeholder="000.000.000-00" mask="000.000.000-00" formControlName="firstCtrl" required>
                     </mat-form-field>
       
                     <div>
-                      <button mat-button matStepperNext>Continuar</button>
+                      <button class="ancho" mat-button matStepperNext>Continuar</button>
                     </div>
       
                   </form>
