@@ -2,8 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  
-    background-color: #f5f5f5;
+    background-color: #fff;
     height: 100%;
   }
   .inicial {
@@ -38,6 +37,25 @@
    
     
   }
+
+  .card.card-small {
+    height: 16px;
+    margin: auto;
+   display: flex;
+   align-items: center;
+   justify-items: center
+  }
+  .toolbar {
+    background-color: #22A0D1;
+ padding-left: 30px;
+    
+   
+  }
+.img{
+  
+}
+
+
 
   
   

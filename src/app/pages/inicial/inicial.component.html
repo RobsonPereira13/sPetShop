@@ -3,20 +3,14 @@
 
         <div class="inicial">
            
-            <h1 class="h3 mb-3 fw-normal">Login</h1>
-            <mat-form-field class="ancho" appearance="fill">
-                <mat-label>Usuario</mat-label>
-                <input matInput>
-              </mat-form-field>
-              <mat-form-field class="ancho" appearance="fill">
-                <mat-label>Contraseña</mat-label>
-                <input matInput>
-              </mat-form-field>
-              <br>
-              <button  class="ancho" mat-raised-button mat-button color="primary">Primary</button>
+              <mat-toolbar class="toolbar">
+                <img  class="img" width="90" alt="Angular Logo"
+                src="https://a-static.mlcdn.com.br/1500x1500/adesivo-de-parede-28x28cm-cachorro-pata-coracao-pets-ref-ade0189-nebula-decor/nebuladecor/b6f11442876e11eba2e94201ac1850e0/eb8582921415f6dbecc8ab77d1cf4375.jpg" />
+              <span class="ancho" > Pet Shop</span>
+              </mat-toolbar >
 
-              
-       
+              <br>
+
               <mat-stepper linear #stepper class="mat-stepper" orientation="vertical">
                 <mat-step label="Step 1" state="pet" [stepControl]="firstFormGroup">
                   <form [formGroup]="firstFormGroup">

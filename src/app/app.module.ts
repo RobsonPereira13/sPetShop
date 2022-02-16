@@ -17,6 +17,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatCardModule} from '@angular/material/card';
 import {MatStepperModule} from '@angular/material/stepper';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 
@@ -73,6 +74,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSnackBarModule,
     MatCardModule,
     MatRadioModule,
+    MatToolbarModule,
     MatCheckboxModule,
     NgxMaskModule.forRoot({
       dropSpecialCharacters:false
