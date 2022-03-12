@@ -5,16 +5,16 @@
   padding: 25px;
   margin-top: 100px;
   position: relative;
-  border: 2px solid #aaa;
+  border: 2px solid #F4F4F4;
   border-radius: 10px;
-  background-color: #22A0D1;
+  background-color: #F4F4F4;
   text-align: center;
 }
 #div-register {
   
   padding: 10px;
-  background-color: #22A0D1;
-  color: white;
+  background-color: #F4F4F4;
+  color: #FFFFFF;
 }
 .example-form {
   min-width: 150px;
@@ -24,12 +24,12 @@
 
 .example-full-width {
   width: 100%;
-  background-color: aliceblue;
+  background-color: #FFFFFF;
   color: #0d0d0e;
   margin-top: 20px;
   border-radius: 5px;
   height: 60px;
-  border: 2px solid #aaa;
+  border: 2px solid #FFFFFF;
 }
 .example-container .mat-form-field + .mat-form-field {
   margin-left: 8px;
@@ -53,10 +53,10 @@ input.example-right-align {
 .example-button-row button,
 .example-button-row a {
   margin-right: 8px;
-  margin-top: 25px;
+  margin-top: 50px;
   width: 130px;
   margin-left: 295px;
-  background-color: aliceblue;
+  background-color: #FFFFFF;
   color: black;
   border: 2px solid #aaa;
 
@@ -68,11 +68,11 @@ input.example-right-align {
   width: 500px;
   margin: 0 auto;
   padding: 25px;
-  margin-top: 0px;
+  margin-top: -100px;
   position: relative;
   
   color: black;
-  text-align: end;
+  text-align: start;
 }
 
 .form-logo {
@@ -88,9 +88,9 @@ input.example-right-align {
   align-items: center;
   width: 120px;
   height: 120px;
-  border: 2px solid #aaa;
+  border: 2px solid #FFFFFF;
   border-radius: 50%;
-  background-color: aliceblue;
+  background-color: #FFFFFF;
   background-image:url('/assets/img/teste.jpg');
   margin: 0 auto;
 }

@@ -45,20 +45,17 @@
    align-items: center;
    justify-items: center
   }
-  .toolbar {
-    background-color: #22A0D1;
- padding-left: 30px;
-    
-   
-  }
-.img{
+
+.mat-stepper{
   
+  background-color: #fff;
 }
 
 
+  
+  
 
-  
-  
+
  
   
   

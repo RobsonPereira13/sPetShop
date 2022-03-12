@@ -36,7 +36,8 @@ body {
 /* Toobar */
 .toolbar {
 
-  background-color: #22A0D1;
+  background-color:  rgba(156, 154, 154, 0.2);;
+ 
   color: #fff;
 
 }

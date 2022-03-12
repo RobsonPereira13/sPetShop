@@ -47,7 +47,9 @@ this.mediaSub= this.mediaObserver.media$.subscribe(
 })
 
     this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.required],
+      firstCtrl: ['', Validators.required,
+    ],
+      
     });
     this.secondFormGroup = this._formBuilder.group({
       secondCtrl: '', 

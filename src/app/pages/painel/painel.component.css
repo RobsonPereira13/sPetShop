@@ -1,15 +1,11 @@
-.carousel-inner > .carousel-item > img {
-  
-  min-width: 100%;
-height: 400px; 
-}
+
 .example-card-sc {
   
-margin-top: 20px;
+margin-top: 0px;
 width: 60%;
 min-width: 100px;
-margin-left: 50px;
-height: 900px;
+margin-left: 0px;
+height: 1000px;
 display: inline-block;
 vertical-align: top;
 background-color: #22A0D1;
@@ -17,10 +13,11 @@ background-color: #22A0D1;
 }
 .example-card-scc {
   
-margin-top: 20px;
-width: 35%;
+margin-top: 0px;
+
+width: 40%;
 min-width: 100px;
-height: 900px;
+height: 1000px;
 display: inline-block;
 vertical-align: top;
 background-color: #dddedf;

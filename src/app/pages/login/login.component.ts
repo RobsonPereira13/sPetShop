@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup,FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
 import {ErrorStateMatcher} from '@angular/material/core';
 import { AngularFireAuth } from './../../../../node_modules/@angular/fire/compat/auth';
-import { Usuario } from './usuario';
+import { Usuario } from '../../model/usuario';
 import { Router } from '@angular/router';
 import {MatSnackBar} from '@angular/material/snack-bar';
 
@@ -27,6 +27,7 @@ export class LoginComponent implements OnInit {
   form: FormGroup;
   usuario: Usuario = new Usuario();
   toppings: FormGroup;
+
  
   hide = true;
  
